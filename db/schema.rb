@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140917131935) do
 
-  create_table "books", force: true do |t|
+  create_table "books", force: :cascade do |t|
     t.string   "isbn",       null: false
     t.string   "author",     null: false
     t.string   "title",      null: false
